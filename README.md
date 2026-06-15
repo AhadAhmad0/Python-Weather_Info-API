@@ -1,23 +1,47 @@
-# Python-Weather_Info-API
+# Weather Information (Voice Assistant)
 
-This is a simple yet powerful Python-based weather information project that fetches and speaks the current temperature of a city using an API. It’s a great example of combining API usage with text-to-speech capabilities in Python.
+A simple Python script that fetches real-time weather data for a city using the WeatherAPI service and reads out the current temperature using text-to-speech.
 
-🔧 Features:
-1.Takes user input for a city name
+## Features
 
-2.Uses an API to fetch real-time weather data
+- Fetches live temperature data via WeatherAPI
+- Voice output using `pyttsx3` (offline text-to-speech)
+- Simple command-line interface
 
-3.Extracts and displays the current temperature
+## Requirements
 
-4.Speaks the temperature aloud using text-to-speech
+- Python 3.x
+- `requests`
+- `pyttsx3`
 
-🧰 Libraries Used:
-1.requests: To send HTTP requests to the weather API and fetch data.
+Install dependencies:
+```bash
+pip install requests pyttsx3
+```
 
-2.json: To parse the JSON data returned by the API.
+## Setup
 
-3.pyttsx3: A text-to-speech conversion library in Python that works offline and is platform-independent.
+1. Get a free API key from [WeatherAPI](https://www.weatherapi.com/).
+2. Set it as an environment variable:
 
-🌐 API Used
-This project uses the WeatherAPI.com (or any other weather API of your choice). Make sure to sign up and get a free API key to access weather data.
-I have used my API key for the programa and you make sure to create your own API key and use in the program.
+```bash
+# Windows
+set WEATHER_API_KEY=your_api_key_here
+
+# Linux/macOS
+export WEATHER_API_KEY=your_api_key_here
+```
+
+## Usage
+
+```bash
+git clone https://github.com/AhadAhmad0/Weather-Information.git
+cd Weather-Information
+python Weather_Information.py
+```
+
+Enter a city name when prompted — the script will print and speak the current temperature.
+
+## Author
+
+**Ahad Ahmad** — [@AhadAhmad0](https://github.com/AhadAhmad0)
