@@ -5,7 +5,7 @@ import pyttsx3
 engine = pyttsx3.init()
 
 city = input("Enter the name of the city\n")
-url = f"https://api.weatherapi.com/v1/current.json?key=f370a9c985d442ff953114109252806&q={city}"
+url = f"https://api.weatherapi.com/v1/current.json?key=Your-API-Key={city}"
 
 r = requests.get(url)
 #print(r.text)
